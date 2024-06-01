@@ -1,0 +1,15 @@
+/* styles.css */
+.slider-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease;
+}
+
+.slide.active {
+  transform: translateX(0);
+}

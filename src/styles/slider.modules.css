@@ -1,0 +1,23 @@
+styles/globals.css .slider-container {
+  position: relative;
+}
+
+.education-card {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  padding: 1rem; /* Tailwind's p-4 */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  text-align: center;
+}
+
+.dots-container .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #cf8484;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dots-container .dot.active {
+  background-color: #be2398;
+}
