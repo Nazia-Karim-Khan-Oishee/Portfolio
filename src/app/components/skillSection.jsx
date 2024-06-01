@@ -1,14 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SkillTag from "./SkillTag";
 import { skillsData } from "./skillsData";
-import { useInView } from "react-intersection-observer";
 
 const SkillsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [showAllSkills, setShowAllSkills] = useState(false);
-  const [ref, inView] = useInView();
 
   const categories = [
     "All",
@@ -27,19 +25,13 @@ const SkillsSection = () => {
     ? filteredSkills
     : filteredSkills.slice(0, 5);
 
-  useEffect(() => {
-    if (inView) {
-      setShowAllSkills(true);
-    }
-  }, [inView]);
-
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
   return (
-    <section id="skills" ref={ref}>
+    <section id="skills">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Skills
       </h2>
@@ -60,7 +52,7 @@ const SkillsSection = () => {
             className="bg-[#181818] p-4 rounded-lg text-center w-full"
             variants={cardVariants}
             initial="initial"
-            animate={inView ? "animate" : "initial"}
+            animate="animate"
             transition={{ duration: 0.3, delay: index * 0.1 }} // Staggered animation
           >
             <img
