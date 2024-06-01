@@ -21,7 +21,7 @@ const HeaderSection = () => {
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h3 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
             <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Hello, I'm Nazia Karim Khan
+              Hello, I&apos;m Nazia Karim Khan
             </span>
           </h3>
           <motion.div
