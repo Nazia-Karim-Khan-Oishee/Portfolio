@@ -9,7 +9,7 @@
 ## Instructions
 
 -Visit **[my portfolio](https://portfolio-g97fdy0wq-nazia-karim-khans-projects.vercel.app/)** using this link. You need to have a Vercel account. Log In or Sign up using this
-  **[link]([https://vercel.com/))**
+  **[link]([https://vercel.com/)**
   
 Or
 
