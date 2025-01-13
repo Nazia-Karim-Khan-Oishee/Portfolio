@@ -13,5 +13,5 @@
   
 Or
 
--Visit **[my portfolio](https://resilient-dusk-05535c.netlify.app/)** using this link . 
+-Visit **[my portfolio](https://resilient-dusk-05535c.netlify.app/)** using this link. 
   
